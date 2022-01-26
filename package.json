@@ -1,0 +1,27 @@
+{
+  "name": "unwind-vite",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently 'npm run vite' 'npm run serve'",
+    "serve": "node --experimental-specifier-resolution=node server/app.js",
+    "vite": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.19",
+    "express": "^4.17.2",
+    "skia-canvas": "^0.9.28",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "concurrently": "^7.0.0",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
+  },
+  "keywords": [],
+  "description": ""
+}
